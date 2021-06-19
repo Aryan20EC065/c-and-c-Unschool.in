@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct employee
+{
+    char name[20];
+    char employee_ID[10];
+    char experiance[10];
+    float salary;
+};
+int main()
+{
+    int i;
+    struct employee E[5];
+    for(i=0;i<5;i++)
+    {
+     printf("\nENTER YOUR salary in rupees\n");
+     gets(E[i].salary);
+     printf("\nENTER YOUR NAME");
+     gets(E1.name);
+     printf("\nENTER YOUR Employee ID");
+     gets(E1.employee_ID);
+     printf("\nENTER YOUR Experiance");
+     gets(E1.experiance);
+    }
+    for(i=0;i<=5;i++)
+    {
+     printf("\nfirst employee name is :%s",E[i].name);
+     printf("\nfirst employee ID is :%s",E[i].employee_ID);
+     printf("\nfirst employee ID is :%s",E[i].experiance);
+     printf("\nfirst employee ID is :%f",E[i].salary);
+    }
+    return 0;
+}

@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#define rock 1
+#define paper 2
+#define scissor 3
+
+int main() 
+{
+    int random=0,a=0;
+    printf("\nplease choose Rock, Paper, Scissor or quit:");
+    scanf("%d",&a);
+    random=rand()%3+1;
+    if (a==1)
+    {
+      printf("\nyou choose:Rock");
+    }
+    else if (a==2)
+    {
+      printf("\nyou choose:paper");
+    }
+    else  
+    {
+      printf("\nyou choose:scissor");
+    }
+    if (random==1)
+    {
+      printf("\ncomputer choose:Rock");
+    }
+    else if (random==2)
+    {
+      printf("\ncomputer choose:paper");
+    }
+    else  
+    {
+      printf("\ncomputer choose:scissor");
+    }
+    if ((a==1 && random==1) || (a==2 && random==2) || (a==3 && random==3))
+    {
+        printf("\nresult:game tie");
+    }
+    else if (a==1 && random==2 || a==2 && random==3 || a==3 && random==1)
+    {
+         printf("\nresult:Computer Won");
+    }
+    else
+    {
+         printf("\nresult:You Won");
+    }
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#define rock 1
+#define paper 2
+#define scissor 3
+
+int main() 
+{
+    int random,a;
+    printf("\nplease choose Rock, Paper, Scissor or quit:");
+    scanf("%d",&a);
+    random=rand()%3+1;
+    if (a==1)
+    {
+      printf("\nyou choose:Rock");
+    }
+    else if (a==2)
+    {
+      printf("\nyou choose:paper");
+    }
+    else if (a==3)  
+    {
+      printf("\nyou choose:scissor");
+    }
+    else
+    {
+        exit(0);
+    }
+    if (random==1)
+    {
+      printf("\ncomputer choose:Rock");
+    }
+    else if (random==2)
+    {
+      printf("\ncomputer choose:paper");
+    }
+    else  
+    {
+      printf("\ncomputer choose:scissor");
+    }
+    if (random==a)
+    {
+        printf("\nresult:game tie");
+    }
+    else if (random>a)
+    {
+         printf("\nresult:Computer Won");
+    }
+    else
+    {
+         printf("\nresult:You Won");
+    }
+    return 0;
+}
